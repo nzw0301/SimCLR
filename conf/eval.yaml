@@ -1,0 +1,17 @@
+# @package _group_
+defaults:
+    - experiment: eval-cifar10
+    - hydra/output: custom
+
+parameter:
+    seed: 7 # random seed value
+    d: 128 # dimensionality of feature representation
+    epochs: 100
+    momentum: 0.9
+    warmup_epochs: 0
+    linear_schedule: true
+    use_cuda: true
+    top_k: 5
+    use_full_encoder: false # original feature extractor to the SimCLR paper
+    classifier: centroid  # valid classifier is in {nonlinear, linear, centroid}.
+    classification_results_json_fname: results.json

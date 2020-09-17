@@ -1,0 +1,17 @@
+# @package _group_
+defaults:
+    - experiment: cifar10
+    - distributed: base
+    - hydra/output: custom
+
+
+parameter:
+    seed: 7 # random seed value
+    d: 128 # dimensionality of feature representation
+    temperature: 0.5
+    epochs: 1000
+    momentum: 0.9
+    num_workers: 8
+    warmup_epochs: 10
+    linear_schedule: true
+    use_cuda: true

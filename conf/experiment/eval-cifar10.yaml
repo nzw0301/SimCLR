@@ -1,0 +1,9 @@
+# @package _global_
+experiment:
+    decay: 0.0 # weight decay
+    lr: 0.1 # learning rate
+    base_cnn: resnet18
+    save_model_epoch: 10
+    name: cifar10
+    batches: 512 # the size of mini-batches. The number of negs are almost double of this value.
+    target_dir: DUMMY-PATH

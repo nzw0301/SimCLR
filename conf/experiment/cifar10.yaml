@@ -1,0 +1,10 @@
+# @package _global_
+experiment:
+    decay: 1e-4 # weight decay
+    lr: 1.0 # learning rate
+    strength: 0.5 # data augmentation parameter
+    base_cnn: resnet18
+    save_model_epoch: 100
+    output_model_name: cifar10.pt
+    name: cifar10
+    batches: 512 # the size of mini-batches per GPU. The number of negs are almost double of this value.
