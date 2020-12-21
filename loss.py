@@ -57,7 +57,7 @@ class NT_Xent(torch.nn.Module):
                 self.cross_entropy(sim1, targets, reduction="none")
             ])  # (2, N)
         else:
-            loss = self.cross_entropy(sim0, targets, reduction="sum") + self.cross_entropy(sim0, targets,
+            loss = self.cross_entropy(sim0, targets, reduction="sum") + self.cross_entropy(sim1, targets,
                                                                                            reduction="sum")
             if self.reduction == "sum":
                 return loss  # (2, N)
